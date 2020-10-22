@@ -1,4 +1,4 @@
-import {TICK,INCREMENT,DECREMENT,RESET} from '../action-types.js'
+import {TICK,INCREMENT,DECREMENT,RESET} from './constants.js'
 
 const initialState = {
   lastUpdate: 0,

@@ -1,6 +1,6 @@
 import App from 'next/app'
 import React from 'react'
-import { useStore } from '@redux/store.js'
+import { useStore } from '../store.js'
 import { Provider } from 'react-redux'
 import '../styles/globals.css'
 

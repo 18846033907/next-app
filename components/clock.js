@@ -1,22 +1,13 @@
-import { useSelector, shallowEqual } from 'react-redux'
-
-const useClock = () => {
-  return useSelector(
-    (state) => ({
-      countReducer: state.countReducer
-    }),
-    shallowEqual
-  )
-}
 
 const formatTime = (time) => {
   // cut off except hh:mm:ss
   return new Date(time).toJSON().slice(11, 19)
 }
 
-const Clock = () => {
+const Clock = props => {
+  const {useClock}=props
   const { countReducer } = useClock()
-  const {lastUpdate,light,count}=countReducer
+  const {lastUpdate,light}=countReducer
   return (
     <div className={light ? 'light' : ''}>
       {formatTime(lastUpdate)}

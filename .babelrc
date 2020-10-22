@@ -8,9 +8,10 @@
             "@components": "./components",
             "@pages": "./pages",
             "@public": "./public",
-            "@redux": "./redux",
+            "@reducers": "./reducers",
             "@utils": "./utils",
-            "@lib": "./lib"
+            "@lib": "./lib",
+            "@styles": "./styles"
           }
         }
       ]

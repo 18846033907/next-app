@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import countReducer from './count-reducer.js'
+import {reducer as countReducer} from '@pages/home/store'
 
 export default combineReducers({
   countReducer,
