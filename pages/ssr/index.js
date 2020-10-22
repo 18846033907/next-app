@@ -1,5 +1,5 @@
-import Page from '../components/page'
-import { initializeStore } from '../store'
+import Page from '@components/page'
+import { initializeStore } from '@redux/store.js'
 
 export default function SSR() {
   return <Page />
