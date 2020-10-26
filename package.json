@@ -37,17 +37,17 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
-    },
-    "lint-staged": {
-      "*.{json,css,md}": [
-        "prettier --write --single-quote",
-        "git add"
-      ],
-      "*.{js}": [
-        "prettier  --write --single-quote",
-        "eslint --fix",
-        "git add"
-      ]
     }
+  },
+  "lint-staged": {
+    "*.{json,css,md}": [
+      "prettier --write --single-quote",
+      "git add"
+    ],
+    "*.{js}": [
+      "prettier  --write --single-quote",
+      "eslint --fix",
+      "git add"
+    ]
   }
 }
