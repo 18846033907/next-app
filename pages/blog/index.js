@@ -1,12 +1,12 @@
-import React from "react";
-import Router from "next/router";
+import React from 'react';
+import Router from 'next/router';
 // posts will be populated at build time by getStaticProps()
 const Blog = () => {
   // const {data,setDataState}=useState([])
   // const {data=[]}=posts
   return (
     <>
-      <button type="button" onClick={() => Router.push("/")}>
+      <button type="button" onClick={() => Router.push('/')}>
         Home
       </button>
       {/* <ul>
